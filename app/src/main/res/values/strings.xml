@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Wisher</string>
+    <string name="input_name_text">Кого вы хотите поздравить?</string>
+    <string name="button_generate_text">пожелание</string>
+    <string name="dear_text">С Новым годом,</string>
+    <string name="wish_text">Желаю</string>
+    <string name="in_new_text">В Новом Году!</string>
+</resources>

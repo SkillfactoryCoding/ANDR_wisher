@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/black"
+    tools:context=".view.fragments.WishGeneratorFragment">
+
+    <ImageView
+        android:id="@+id/snowflake_top"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/ic_snowflake"
+        app:layout_constraintBottom_toTopOf="@+id/first_part"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/first_part"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/button_generate"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_generate"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_back"
+        android:padding="8dp"
+        android:text="@string/button_generate_text"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/button_next"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/white"
+        android:src="@drawable/ic_round_keyboard_arrow_right_24"
+        app:layout_constraintLeft_toRightOf="@id/button_generate"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/button_generate"/>
+
+    <TextView
+        android:id="@+id/second_part"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_generate" />
+
+    <ImageView
+        android:layout_marginTop="32dp"
+        android:id="@+id/snowflake_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:src="@drawable/ic_snowflake"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/second_part"
+        android:foregroundTint="@color/white"
+        app:tint="@color/white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
